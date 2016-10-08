@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <table>
+        <tr>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Year</td>
+        </tr>
+        <% for(var i=0; i < jfile.length; i++) { %>
+            <tr>
+                <td><%= jfile[i].first %></td>
+                <td><%= jfile[i].last %></td>
+                <td><%= jfile[i].year %></td>
+            </tr>
+            <% } %>
+    </table>
+  </body>
+</html>
